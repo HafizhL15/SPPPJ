@@ -1,0 +1,138 @@
+body {
+    /* font-family: cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Montserrat';
+    font-size: medium;
+    
+}
+
+.bg-fix{
+    /* Mengatur gambar latar belakang dari file lokal */
+    background-image: url('/img/background.jpg');
+    
+    /* Menetapkan ukuran gambar latar belakang */
+    background-size: cover;
+    
+    /* Menetapkan posisi gambar latar belakang */
+    background-position: center;
+    
+    /* Menetapkan warna latar belakang sebagai fallback jika gambar tidak tersedia */
+    background-color:rgba(110, 107, 107, 0.2);
+    
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) */
+}
+
+.main-bg {
+    background-color: #17bb95;
+}
+
+.main-color {
+    background-color: #219EBC !important;
+}
+
+.footer-content {
+    background-color: #023047;
+}
+
+/* banner */
+
+.banner {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/bg_hd.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-produk {
+    height: 72vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.text-orange {
+    color: #FFB703;
+}
+
+.hovered-card{
+    transition: 0.3s;
+}
+
+.hovered-card:hover{
+    transform: scale(1.1);
+}
+/* promo */
+
+.card-promo {
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+.card-promo:hover {
+    transform: scale(1.1);
+}
+
+.icon-service {
+    width: 90px;
+    height: 90px;
+    border: solid #fff 2px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+/* pelayanan */
+
+.pelayanan {
+    background-color: #700970;
+}
+
+.pelayanan-content {
+    transition: .3s;
+}
+
+.pelayanan-content:hover {
+    transform: scale(1.1);
+}
+
+.pelayanan .icon-circle {
+    width: 90px;
+    height: 90px;
+    border: solid 2px;
+}
+
+/* menu favorit */
+
+.menu-favorit {
+    background-color: rgba(243, 243, 243);
+}
+
+.menu-favorit-content {
+    transition: .3s;
+}
+
+.menu-favorit-content:hover {
+    transform: scale(1.1);
+}
+
+/* testimony */
+
+.testimony-content {
+    transition: .3s;
+}
+
+.testimony-content:hover {
+    transform: scale(1.1);
+}
+
+/* subscribe */
+
+.subscribe-content {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* produk banner */
+.produk-banner {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
