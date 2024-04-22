@@ -18,7 +18,7 @@
         @foreach ($produk as $item)
           <div class="col-sm-6 col-lg-3 hovered-card mb-3">
               <div class="card" style="text-decoration: none">
-                <img src="{{ asset('/storage/produk/'.$item->gambar) }}" class="card-img-top" height="235px" width="257px">
+                <img src="{{ asset('/storage/produk/'.$item->gambar) }}" class="card-img-top" style="height:200px; width:257px;">
                 <div class="card-body text-center">
                   <a href="{{ url('produk-list') }}/{{ $item->id }}" style="text-decoration: none">
                   <h5 class="card-title text-success fw-bold">{{ $item->nama_produk }} </h5></a>

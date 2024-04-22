@@ -179,7 +179,7 @@
                 </button>
 
                 <!-- Topbar Search -->
-                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                {{-- <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                     <div class="input-group">
                         <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                         <div class="input-group-append">
@@ -188,7 +188,7 @@
                             </button>
                         </div>
                     </div>
-                </form>
+                </form> --}}
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
@@ -329,18 +329,6 @@
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="{{ route('profile') }}">
-                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                {{ __('Profile') }}
-                            </a>
-                            <a class="dropdown-item" href="javascript:void(0)">
-                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                {{ __('Settings') }}
-                            </a>
-                            <a class="dropdown-item" href="javascript:void(0)">
-                                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                {{ __('Activity Log') }}
-                            </a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>

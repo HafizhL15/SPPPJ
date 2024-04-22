@@ -35,6 +35,10 @@
                   Pesanan Diproses
                   @elseif($pesanan->status == 4)
                   Pesanan Dikirim
+                  @elseif($pesanan->status == 6)
+                  Pesanan Siap Diambil
+                  @elseif($pesanan->status == 5)
+                  Selesai
                   @else
                    
                   @endif
@@ -48,6 +52,13 @@
                     @csrf
                     {{ method_field('DELETE') }}
                     <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Anda yakin akan menghapus Pesanan ?');">Batalkan Pesanan</button>
+                  </form>
+                  @endif
+
+                  @if($pesanan->status == 4)
+                  <form action="{{ url('selesai-pesanan', $pesanan->id) }}" method="post">
+                    @csrf
+                    <button type="submit" class="btn btn-primary btn-sm mt-2" >Selesai</button>
                   </form>
                   @endif
                 </td>

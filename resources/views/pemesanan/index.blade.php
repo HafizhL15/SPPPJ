@@ -36,13 +36,23 @@
                         Pesanan Diproses
                         @elseif($item->status == 4)
                         Pesanan Dikirim
+                        @elseif($item->status == 6)
+                        Pesanan Siap Diambil
+                        @elseif($item->status == 5)
+                        Selesai
                         @else
                         @endif
                       </td>
                     <td>
+                        @if (Auth::check() && Auth::user()->role_id === 2)
                         <a href="{{ route('pemesanan.edit', $item->id) }}"  class="btn btn-warning mb-2">Edit Pesanan</a><br>
+                        @endif
                         <a href="{{ url('daftar-pesanan') }}/{{ $item->id }}" class="btn btn-success">Lihat Pesanan</a><br>
+
                         
+
+
+                        {{-- <a href="{{ url('edit') }}/{{ $item->id }}" class="btn btn-primary mt-2">Selesai</a> --}}
                         {{-- <form action="{{ route('pemesanan.destroy', $item->id) }}" method="POST">
                             @csrf
                             @method('delete')

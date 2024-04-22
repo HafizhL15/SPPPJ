@@ -61,6 +61,8 @@
                             <option value="2">Menunggu Verifikasi</option> --}}
                             <option value="3">Pesanan Diproses</option>
                             <option value="4">Pesanan Dikirim</option>
+                            <option value="6">Pesanan Siap Diambil</option>
+                            <option value="5">Selesai</option>
                         </select>
                         @if(session('error'))
                             <p class="mx-5 fw-bold" style="color: red;">{{ session('error') }}</p>

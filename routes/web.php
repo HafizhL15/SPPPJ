@@ -53,11 +53,14 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/riwayat-pesanan/{id}', [RiwayatController::class, 'delete']);
     Route::post('/konfirmasi-pesanan/{id}',[RiwayatController::class, 'pembayaran']);
     Route::post('/riwayat-pesanan/{id}',[RiwayatController::class, 'diskon']);    
+    Route::post('/riwayat-pesanan/{id}', [RiwayatController::class, 'pembayaran']);
+    Route::post('/selesai-pesanan/{id}', [RiwayatController::class, 'selesaiPesanan']);
 
     Route::get('/booking-service',[ServiceController::class, 'create']);
     Route::post('/booking_service', [ServiceController::class, 'service']);
     Route::get('/riwayat-service',[ServiceController::class, 'riwayat_service']);
     Route::get('/riwayat-service/{id}',[ServiceController::class, 'detail']);
+    
 
     Route::get('/profile', [ProfileController::class, 'index']);
     Route::post('/profile', [ProfileController::class, 'update']);
@@ -77,6 +80,7 @@ Route::resource('admin_helpdesk', Helpdesk_AdminController::class);
 Route::resource('service', ServiceBarangController::class);
 Route::get('/daftar-pesanan/{id}', [PemesananController::class, 'detail']);
 Route::post('/pemesanan/{id}', [PemesananController::class],'update');
+
 Route::get('/admin-profile', [ProfileAdminController::class, 'index'])->name('profile');
 Route::put('/admin-profile', [ProfileAdminController::class, 'update'])->name('profile.update');
 

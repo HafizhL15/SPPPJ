@@ -38,6 +38,25 @@
                           <td>:</td>
                           <td>{{ $pesanan->kabupaten }}</td>
                       </tr>
+                      <tr>
+                        <td>Status</td>
+                        <td>:</td>
+                        <td>
+                          @if($pesanan->status == 1)
+                          Menunggu Pembayaran
+                          @elseif($pesanan->status == 2)
+                          Menunggu Verifikasi
+                          @elseif($pesanan->status == 3)
+                          Pesanan Diproses
+                          @elseif($pesanan->status == 4)
+                          Pesanan Dikirim
+                          @elseif($pesanan->status == 6)
+                          Pesanan Siap Diambil
+                          @elseif($pesanan->status == 5)
+                          Selesai                       
+                          @endif
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
             </div>

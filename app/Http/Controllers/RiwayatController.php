@@ -67,6 +67,16 @@ class RiwayatController extends Controller
         return redirect('riwayat-pesanan');
     }
 
+    public function selesaiPesanan($id)
+    {
+        $pesan = Pesanan::findOrFail($id);
+        $pesan->status = 5;
+        $pesan->update();
+        
+        Alert::success('Pesanan Telah Selesai', 'Succes');
+        return redirect()->back();
+    }
+
     public function delete($id)
     {
         $pesanan = Pesanan::where('id', $id)->first();
