@@ -8,7 +8,7 @@ Ini adalah repositori untuk proyek Sistem Informasi Penjualan Produk dan Pelayan
 - Manajemen Stok: Melacak stok produk secara real-time.
 - Pembuatan Laporan Pembayaran: Menghasilkan laporan pembayaran untuk pesanan pelanggan.
 - Analisis Kepuasan Pelanggan: Menyediakan kuesioner dan kepuasan pelanggan untuk membantu perusahaan dalam pelayanan kepada pelanggan.
-- Pelayanan Jasa Service: Memungkinkan pelanggan untuk booking jadwal layanan dan pelacakan status service barang.
+- Pelayanan Jasa Service: Memungkinkan pelanggan untuk booking jadwal layanan dan pelacakan status service barang..
 
 ### Design Sistem
 ![Contoh Sistem Informasi Penjualan](gambar/3.png)
