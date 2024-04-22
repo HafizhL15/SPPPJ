@@ -11,4 +11,4 @@ Ini adalah repositori untuk proyek Sistem Informasi Penjualan Produk dan Pelayan
 - Pelayanan Jasa Service: Memungkinkan pelanggan untuk booking jadwal layanan dan pelacakan status service barang.
 
 ### Design Sistem
-![Contoh Sistem Informasi Penjualan](gambar/1.png)
+![Contoh Sistem Informasi Penjualan](gambar/1.png)        ![Contoh Sistem Informasi Penjualan](gambar/2.png)
